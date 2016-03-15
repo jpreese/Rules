@@ -1,12 +1,13 @@
-﻿using System;
-
-namespace Rules
+﻿namespace Rules
 {
     public class RamRule : ISystemRequirementsRule
     {
         public bool CheckRequirements(Computer computer)
         {
-            return computer.Ram > 3;
+            var ruleResult = computer.Ram > 3;
+
+            System.Console.WriteLine(string.Format("RamRule: {0}", ruleResult));
+            return ruleResult;
         }
     }
 }

@@ -15,7 +15,7 @@ namespace Rules
             };
 
             var checker = new SystemRequirementsChecker();
-            Console.WriteLine(checker.CheckSystem(computer));
+            checker.CheckSystem(computer);
 
             Console.ReadKey();
         }

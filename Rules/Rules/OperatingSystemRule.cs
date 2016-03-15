@@ -4,7 +4,12 @@
     {
         public bool CheckRequirements(Computer computer)
         {
-            return computer.OperatingSystem != "Linux";
+            var ruleResult = computer.OperatingSystem != "Linux";
+            System.Console.WriteLine(string.Format("OperaringSystemRule: {0}", ruleResult));
+
+            return ruleResult;
         }
     }
 }
+
+

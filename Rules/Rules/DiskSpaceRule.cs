@@ -4,7 +4,13 @@
     {
         public bool CheckRequirements(Computer computer)
         {
-            return computer.DiskSpace > 10;
+            var ruleResult = computer.DiskSpace > 10;
+            System.Console.WriteLine(string.Format("DiskSpaceRule: {0}", ruleResult));
+
+            return ruleResult;
         }
     }
 }
+
+
+
